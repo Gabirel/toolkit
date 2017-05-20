@@ -10,3 +10,5 @@ If you want some executable files, please go to this: https://github.com/Gabirel
 
 * math
     - factorial
+
+    > The biggest feature: you can calculate with no limits, not like in Java. Simple function, simple code.
