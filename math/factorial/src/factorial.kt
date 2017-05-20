@@ -12,6 +12,10 @@ tailrec fun factorial(num: Int, result: Result){
 
 fun main(args: Array<String>) {
 	val result = Result()
-	factorial(args[0].toInt(), result)
-	println(result.value)
+	if (args.size == 0) {
+		println("Please add an parameter!!")
+	} else{
+		factorial(args[0].toInt(), result)
+		println(result.value)
+	}
 }
