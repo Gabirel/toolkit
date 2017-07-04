@@ -1,4 +1,5 @@
 #!/bin/bash
+# Shamelessly stolen from https://github.com/wsdjeg/DotFiles/blob/master/scripts/test_24bit.sh
 awk 'BEGIN{
     s="/\\/\\/\\/\\/\\"; s=s s s s s s s s s s s s s s s s s s s s s s s;
     for (colnum = 0; colnum<256; colnum++) {
@@ -13,4 +14,5 @@ awk 'BEGIN{
     printf "\n";
 }'
 
+# DO NOT USE `sh`
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/JohnMorales/dotfiles/master/colors/24-bit-color.sh)"
